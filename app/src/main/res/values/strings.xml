@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+    <string name="opendrawer">open drawer</string>
+    <string name="closedrawer">close drawer</string>
+    <string-array name="choose_sp">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+    <string-array name="expense">
+        <item>Food or Drink</item>
+        <item>Shopping</item>
+        <item>Medical</item>
+        <item>Housing</item>
+        <item>Family</item>
+        <item>Other</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="income">
+        <item>salary</item>
+        <item>other</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

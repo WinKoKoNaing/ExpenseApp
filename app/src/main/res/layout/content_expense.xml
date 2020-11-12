@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/expense"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvExpenseDate"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#987"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_light"
+        android:onClick="chooseDate"
+        android:text="Select Date"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/etExpenseName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_account_design"
+        android:hint="Enter Item's Name"
+        android:padding="5sp"
+        android:layout_margin="5sp"
+        android:textColor="@color/colorPrimary" />
+    <EditText
+        android:id="@+id/etExpenseBalance"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_account_design"
+        android:hint="Enter Balance"
+        android:padding="5sp"
+        android:layout_margin="5sp"
+        android:textColor="@color/colorPrimary" />
+    <Spinner
+        android:id="@+id/spExpense"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5sp"
+        android:background="@drawable/new_account_design"
+        android:theme="@style/mySpinnerItemStyle"
+        android:entries="@array/expense">
+
+    </Spinner>
+    <EditText
+        android:id="@+id/etExpenseNote"
+        android:layout_width="match_parent"
+        android:layout_margin="5sp"
+        android:layout_height="200dp"
+        android:background="@drawable/new_account_design"
+        android:gravity="top|left"
+        android:hint="Enter note"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:minLines="8"
+        android:padding="5sp"
+        android:scrollbars="vertical"
+        android:textColor="@color/colorPrimary" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/income"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvIncomeDate"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#987"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_light"
+        android:onClick="chooseDate"
+        android:text="Select Date"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/etIncomeBalance"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_account_design"
+        android:hint="Enter Balance"
+        android:padding="5sp"
+        android:layout_margin="5sp"
+        android:textColor="@color/colorPrimary" />
+    <Spinner
+        android:id="@+id/spIncome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/mySpinnerItemStyle"
+        android:textAlignment="center"
+        android:layout_margin="5sp"
+        android:background="@drawable/new_account_design"
+        android:entries="@array/income">
+
+    </Spinner>
+    <EditText
+        android:id="@+id/etIncomeNote"
+        android:layout_width="match_parent"
+        android:layout_margin="5sp"
+        android:layout_height="200dp"
+        android:background="@drawable/new_account_design"
+        android:gravity="top|left"
+        android:hint="Enter note"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:minLines="8"
+        android:padding="5sp"
+        android:scrollbars="vertical"
+        android:textColor="@color/colorPrimary" />
+</LinearLayout>

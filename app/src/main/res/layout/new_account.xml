@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEBEE"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Create Account"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvShowDate"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#987"
+        android:gravity="center"
+        android:textColor="@android:color/holo_green_light"
+        android:onClick="chooseDate"
+        android:text="Select Date"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/etAccountName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_account_design"
+        android:hint="Enter name"
+        android:padding="5sp"
+        android:layout_margin="5sp"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etBalance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5sp"
+            android:paddingStart="5sp"
+            android:background="@drawable/new_account_design"
+            android:hint="Enter Balance"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary" />
+
+        <Spinner
+            android:id="@+id/spChoice"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:entries="@array/choose_sp"
+            android:background="#282939"
+            android:padding="5sp"
+            android:layout_marginEnd="5sp"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="match_parent"
+        android:layout_margin="5sp"
+        android:layout_height="200dp"
+        android:background="@drawable/new_account_design"
+        android:gravity="top|left"
+        android:hint="Enter note"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:minLines="8"
+        android:padding="5sp"
+        android:scrollbars="vertical"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#049"
+        android:layout_marginTop="40dp"
+        android:onClick="saveProfile"
+        android:text="Save"
+        android:textStyle="bold" />
+</LinearLayout>

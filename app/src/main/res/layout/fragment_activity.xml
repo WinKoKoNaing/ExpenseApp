@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tbBalanceShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:text="Total Balance :"/>
+                <TextView
+                    android:id="@+id/tvBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tbBalanceShow"
+                    android:layout_marginStart="45sp"
+                    android:text="Balance:"/>
+                <TextView
+                    android:id="@+id/tbExpenseBalanceShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tbBalanceShow"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginStart="12sp"
+                    android:text="Expense Balance :"/>
+                <TextView
+                    android:id="@+id/tvExpenseBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBalance"
+                    android:layout_marginTop="10sp"
+                    android:layout_toEndOf="@id/tbExpenseBalanceShow"
+                    android:layout_marginStart="20sp"
+                    android:text="Balance:"/>
+                <View
+                    android:layout_below="@id/tbExpenseBalanceShow"
+                    android:layout_margin="10sp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/viewbar"
+                    android:background="#848"
+                    android:layout_height="2dp"/>
+                <TextView
+                    android:id="@+id/tbRemainBalanceShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewbar"
+                    android:layout_marginStart="10sp"
+                    android:text="Remain Balance :"/>
+                <TextView
+                    android:id="@+id/tvRemainBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewbar"
+                    android:layout_toEndOf="@id/tbRemainBalanceShow"
+                    android:layout_marginStart="30sp"
+                    android:text="Balance:"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <view
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            class="im.dacer.androidcharts.PieView"
+            android:layout_marginTop="10sp"
+            android:layout_gravity="center"
+            android:background="@drawable/pie_bar_design"
+            android:id="@+id/pie_view" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp">
+            <TextView
+                android:id="@+id/tvShowMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="Earm Money"/>
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50sp"
+                android:layout_alignParentEnd="true"
+                android:text="Money" />
+            <TextView
+                android:id="@+id/tvShowWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_below="@+id/tvShowMonth"
+                android:layout_marginTop="10sp"
+                android:text="Earm Week"/>
+            <TextView
+                android:id="@+id/tvWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50sp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tvMonth"
+                android:layout_marginTop="10sp"
+                android:text=" Money" />
+            <TextView
+                android:id="@+id/tvShoDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_below="@+id/tvShowWeek"
+                android:layout_marginTop="10sp"
+                android:text="Earm Day"/>
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50sp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tvWeek"
+                android:layout_marginTop="10sp"
+                android:text=" Money" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
